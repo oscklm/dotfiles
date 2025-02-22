@@ -62,3 +62,7 @@ alias ls='ls --color'
 # Shell integrations
 eval "$(zoxide init zsh --cmd cd)"
 eval $(thefuck --alias)
+
+# Starship
+export STARSHIP_CONFIG="$HOME/.config/starship/starship.toml"
+eval "$(starship init zsh)"
