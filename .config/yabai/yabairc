@@ -1,0 +1,33 @@
+yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
+sudo yabai --load-sa
+
+# bsp, stack or float
+yabai -m config layout bsp
+
+# padding 
+yabai -m config top_padding 12
+yabai -m config bottom_padding 12
+yabai -m config left_padding 12
+yabai -m config right_padding 12
+yabai -m config window_gap 12
+
+
+# mouse 
+
+yabai -m config mouse_follow_focus on
+
+
+yabai -m config mouse_modifier alt
+# left click + drag
+yabai -m config mouse_action1 move
+
+# right click + drag
+yabai -m config mouse-action2 resize
+
+yabai -m mouse_drop_action swap
+
+# Disable specific apps
+yabai -m rule --add app="^System Settings$" manage=off
+yabai -m rule --add app="^ChatGPT$" manage=off
+yabai -m rule --add app="^Spotify$" manage=off
+yabai -m rule --add app="^Raycast$" manage=off

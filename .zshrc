@@ -58,6 +58,11 @@ setopt hist_save_no_dups
 
 # Aliases
 alias ls='ls --color'
+alias cfg-yabai='vim ~/.config/yabai/yabairc'
+alias cfg-skhd='vim ~/.config/skhd/skhdrc'
+
+# Remove / from word characters
+WORDCHARS=${WORDCHARS//[\/.]/}
 
 # Shell integrations
 eval "$(zoxide init zsh --cmd cd)"

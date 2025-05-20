@@ -2,10 +2,12 @@ format = """
 $directory\
 $git_branch\
 $git_status\
-$fill\
+$fill \
 $nodejs\
 $jobs\
 $cmd_duration\
 $line_break\
 $character"""
 
+[fill]
+symbol = " "
